@@ -1,8 +1,12 @@
-let i;
-let num = 0;
+// メイン部分
+let alertString;
+alertString = addString("WebCamp");
 
-for(i = 1; i < 11; i++){
-    num = num + i;
+// 作成した関数を呼び出す
+alert(alertString);
+
+// 作成した関数
+function addString(strA){
+  let addStr = "Hello " + strA;
+  return addStr;
 }
-
-alert('1から10まで足し算した結果は'　+ num + 'です');
